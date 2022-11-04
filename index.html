@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let fname=prompt("enter first name")
+            let lname=prompt("enter second name")
+                let fnamecount=0
+                let lnamecount=0
+            for(let i=0; i<fname.length; i++){
+                if(fname[i]=="a"){
+                    fnamecount+=1;
+                }else if(fname[i]=="e"){
+                    fnamecount+=1;
+                }else if(fname[i]=="i"){
+                    fnamecount+=1;
+                }else if(fname[i]=="o"){
+                    fnamecount+=1;
+                }else if(fname[i]=="u"){
+                    fnamecount+=1;
+                }
+            }
+            for(let j=0; j<lname.length; j++){
+                if(lname[j]=="a"){
+                    lnamecount+=1;
+                }else  if(lname[j]=="e"){
+                    lnamecount+=1;
+                }else  if(lname[j]=="i"){
+                    lnamecount+=1;
+                }else  if(lname[j]=="o"){
+                    lnamecount+=1;
+                }else  if(lname[j]=="u"){
+                    lnamecount+=1;
+                }
+            }
+
+            if(fnamecount<lnamecount){
+                console.log(lname +" count is greater")
+            }
+            else if(fnamecount>lnamecount){
+                console.log(fname +" count is greater") 
+            }else{
+                console.log(fname+" "+ lname+" equal") 
+            }
+    </script>
+</body>
+</html>
